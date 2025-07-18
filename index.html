@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+</head> 
   
-</head>
 <body>
-  <header>
+  <header> 
     <h1>Aadam Walters</h1>
     <p>Web Developer | Programmer | Analyst</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <main>
     <section id="about">
       <h2>About Me</h2>
       <p>Brief introduction goes here.</p>
     </section>
+
     <section id="education">
       <h2>Education</h2>
       <ul>
         <li>Degree in BCom majoring in management and Information systems</li>
         <li>FNB Certification in Full Stack Web Development</li>
       </ul>
+    </section>
+
     <section id="projects">
       <h2>Projects</h2>
 
       <h4>Programming</h4>
-      <li>Project 1 - Short description</li>
-      <li>Project 2 - Short description</li>
-  
-    
-      <h4>Analyst</h4>
-      <li>Project 1 - Short description</li>
-      <li>Project 2 - Short description</li>
+      <ul>
+        <li>Project 1 - Short description</li>
+        <li>Project 2 - Short description</li>
+      </ul>
 
-  
+      <h4>Analyst</h4>
+      <ul>
+        <li>Project 1 - Short description</li>
+        <li>Project 2 - Short description</li>
+      </ul>
     </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:your.email@example.com">waltersaadam@gmail.com</a></p>
     </section>
   </main>
+
   <footer>
     &copy; 2025 Aadam Walters. All rights reserved.
   </footer>
+
+  <!-- Canvas for drag pixel effect -->
+  <canvas id="pixelCanvas"></canvas>
+  <script src="script.js"></script>
 </body>
 </html>
+

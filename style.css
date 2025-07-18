@@ -1,37 +1,74 @@
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background: #2b444e;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    nav {
-      margin: 1rem 0;
-      text-align: center;
-    }
-    nav a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #eee;
-      margin-top: 2rem;
-    }
+ /* GENERAL STYLES */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4; /* light background behind main content */
+  color: #222;
+  position: relative; /* Ensures canvas layering works properly */
+  overflow-x: hidden;  /* Prevents horizontal scroll from canvas if resized oddly */
+}
 
+header {
+  background: #2b444e;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative; /* ensures it stays below the canvas */
+  z-index: 1;
+}
+
+nav {
+  margin: 1rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* 🎯 PIXEL CANVAS STYLING */
+#pixelCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999; /* on top of everything, but won't block interaction */
+}
+
+canvas#pixelCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+    }
