@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: transparent;
+  background: ;
   color:white;
   padding: 2rem 1rem;
   text-align: center;
@@ -243,4 +243,75 @@ section:nth-child(even) {
 }
 section:nth-child(odd) {
   background-color: #1b1b2f;
+}
+.social-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #00ffee;
+  border-radius: 40px;
+  background: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px #00ffee, 0 0 20px #ff00cc inset;
+}
+
+.social-btn:hover {
+  color: #0d0d15;
+  background: #00ffee;
+  box-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee;
+}
+
+/* Optional: Add unique glow per button */
+.github {
+  border-color: #ff00cc;
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc inset;
+}
+.github:hover {
+  background: #ff00cc;
+  color: #0d0d15;
+  box-shadow: 0 0 15px #ff00cc, 0 0 30px #ff00cc;
+}
+
+.linkedin {
+  border-color: #0077b5;
+  box-shadow: 0 0 10px #0077b5, 0 0 20px #0077b5 inset;
+}
+.linkedin:hover {
+  background: #0077b5;
+  color: #fff;
+  box-shadow: 0 0 15px #0077b5, 0 0 30px #0077b5;
+}
+
+.email {
+  border-color: #00ffee;
+  box-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee inset;
+}
+.email:hover {
+  background: #00ffee;
+  color: #0d0d15;
+  box-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #0d0d15 0%, #0a0a13 100%);
+  pointer-events: none;
 }

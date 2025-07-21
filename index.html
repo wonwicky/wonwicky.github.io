@@ -14,7 +14,7 @@
     <p>Web Developer | Programmer | Analyst</p>
   </header>
 
-  <nav>
+  <nav id="navbar" class="hidden">
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -59,14 +59,57 @@
     </section>
 
     <section id="contact" class="scroll-section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">waltersaadam@gmail.com</a></p>
-    </section>
+  <h2>Contact</h2>
+
+
+  <div class="social-buttons">
+    
+    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn linkedin">
+      <span>LinkedIn</span>
+    </a>
+    <a href="mailto:waltersaadam@gmail.com" class="social-btn email">
+      <span>Email Me</span>
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" class="social-btn github">
+      <span>GitHub</span>
+    </a>
+  </div>
+</section>
+
   </main>
 
   <footer>
     &copy; 2025 Aadam Walters. All rights reserved.
   </footer>
+  <!-- Place this div inside your <body> but outside main content -->
+<div id="particles-js"></div>
+
+<!-- Load particles.js and initialize it -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.2, "random": true },
+      "size": { "value": 3, "random": true },
+      "line_linked": { "enable": false },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "random": true,
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "events": { "onhover": { "enable": false } },
+      "resize": true
+    },
+    "retina_detect": true
+  });
+</script>
+
 
   <!-- Canvas for drag pixel effect -->
   <canvas id="pixelCanvas"></canvas>
