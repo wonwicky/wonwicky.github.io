@@ -1,10 +1,10 @@
-/* GENERAL STYLES */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #0f0f1a; /* Futuristic dark background */
-  color: #e0e0e0;       /* Light text for contrast */
+  background: #0f0f1a; 
+  color: #e0e0e0;       
   position: relative;
   overflow-x: hidden;
 }
@@ -14,7 +14,7 @@ header {
   color:white;
   padding: 2rem 1rem;
   text-align: center;
-  position: relative;
+  position:top ;
   z-index: 1;
 }
 
@@ -191,7 +191,7 @@ canvas#pixelCanvas {
   transition: width 0.1s ease;
 }
 
-/* Typing effect */
+
 .typing-effect {
   border-right: 2px solid #00ffe7;
   animation: blink 1s infinite;
@@ -237,7 +237,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Alternate section backgrounds */
+
 section:nth-child(even) {
   background-color: #121224;
 }
@@ -314,4 +314,123 @@ section:nth-child(odd) {
   z-index: -1;
   background: radial-gradient(circle at center, #0d0d15 0%, #0a0a13 100%);
   pointer-events: none;
+}
+#navbar {
+  position: ;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 15, 30, 0.85);
+  border: 2px solid #00ffe7;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0 0 15px #00ffe7;
+
+  
+}
+
+#navbar.shrink {
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  gap: 1rem;
+  background: rgba(10, 10, 20, 0.95);
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media(min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contact-form, .contact-buttons {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.15);
+}
+
+.contact-form h3, .contact-buttons h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
+  color: #ccc;
+}
+
+.glow-button {
+  background: linear-gradient(90deg, #00ffe7, #b388ff);
+  border: none;
+  padding: 0.75rem 2rem;
+  color: #0d0d15;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+.contact-buttons .button-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media(min-width: 600px) {
+  .contact-buttons .button-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-btn {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }

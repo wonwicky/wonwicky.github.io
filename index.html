@@ -9,12 +9,12 @@
 </head> 
   
 <body>
-  <header> 
+  <header class="site-header"> 
     <h1>Aadam Walters</h1>
     <p>Web Developer | Programmer | Analyst</p>
   </header>
 
-  <nav id="navbar" class="hidden">
+  <nav id="navbar"  >
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -58,23 +58,35 @@
       </ul>
     </section>
 
-    <section id="contact" class="scroll-section">
-  <h2>Contact</h2>
+ 
+ <section id="contact" class="scroll-section">
+  <h2 class="text-shimmer">Let’s Connect</h2>
+  <p>Feel free to reach out. I’d love to hear from you!</p>
 
+  <div class="contact-container">
+    <!-- 💬 Form -->
+    <div class="contact-form">
+      <h3>Send Me a Message</h3>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="glow-button">Send Message</button>
+      </form>
+    </div>
 
-  <div class="social-buttons">
-    
-    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn linkedin">
-      <span>LinkedIn</span>
-    </a>
-    <a href="mailto:waltersaadam@gmail.com" class="social-btn email">
-      <span>Email Me</span>
-    </a>
-    <a href="https://github.com/yourusername" target="_blank" class="social-btn github">
-      <span>GitHub</span>
-    </a>
+    <!-- 🤝 Contact Buttons -->
+    <div class="contact-buttons">
+      <h3>Get in Touch with Me</h3>
+      <div class="button-grid">
+        <a href="mailto:waltersaadam@gmail.com" class="contact-btn email">Email</a>
+        <a href="https://www.linkedin.com/in/aadam-walters-b47942286/" class="contact-btn linkedin" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" class="contact-btn github" target="_blank">GitHub</a>
+      </div>
+    </div>
   </div>
 </section>
+
 
   </main>
 

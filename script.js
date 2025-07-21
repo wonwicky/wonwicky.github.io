@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
     constructor(x, y) {
       this.x = x;
       this.y = y;
-      this.life = 1; // full opacity
+      this.life = 1; 
     }
 
     update() {
