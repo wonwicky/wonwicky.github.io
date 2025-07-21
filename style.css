@@ -1,20 +1,20 @@
- /* GENERAL STYLES */
+/* GENERAL STYLES */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4; /* light background behind main content */
-  color: #222;
-  position: relative; /* Ensures canvas layering works properly */
-  overflow-x: hidden;  /* Prevents horizontal scroll from canvas if resized oddly */
+  background: #0f0f1a; /* Futuristic dark background */
+  color: #e0e0e0;       /* Light text for contrast */
+  position: relative;
+  overflow-x: hidden;
 }
 
 header {
-  background: #2b444e;
-  color: #fff;
+  background: transparent;
+  color:white;
   padding: 2rem 1rem;
   text-align: center;
-  position: relative; /* ensures it stays below the canvas */
+  position: relative;
   z-index: 1;
 }
 
@@ -26,27 +26,23 @@ nav {
 }
 
 nav a {
-  color: #333;
+  color: white;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  position: relative;
-  z-index: 1;
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffe7;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background: #1a1a2e;
+  color: #aaa;
   margin-top: 2rem;
   position: relative;
   z-index: 1;
@@ -60,33 +56,18 @@ footer {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 9999; /* on top of everything, but won't block interaction */
+  z-index: 9999;
+  background: transparent;
 }
 
 canvas#pixelCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      pointer-events: none;
-      z-index: 9999;
-    }
-
-
-
-    /* Custom Portfolio Effects Stylesheet */
-
-/* Pixel drag effect canvas */
-#pixelCanvas {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
-  z-index: 1;
-  background: transparent;
+  z-index: 9999;
 }
 
 /* Enhanced glow effects */
@@ -102,8 +83,8 @@ canvas#pixelCanvas {
   right: 0;
   bottom: 0;
   background: linear-gradient(45deg, 
-    hsl(260, 100%, 70%, 0.1), 
-    hsl(300, 100%, 65%, 0.1));
+    hsl(260, 100%, 70%, 0.15), 
+    hsl(180, 100%, 65%, 0.15));
   border-radius: inherit;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -129,7 +110,7 @@ canvas#pixelCanvas {
   position: absolute;
   width: 2px;
   height: 2px;
-  background: hsl(260, 100%, 70%);
+  background: #00ffe7;
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
 }
@@ -161,7 +142,7 @@ canvas#pixelCanvas {
   height: 100%;
   background: linear-gradient(90deg, 
     transparent, 
-    hsl(260, 100%, 70%, 0.2), 
+    rgba(0, 255, 231, 0.2), 
     transparent);
   transition: left 0.6s ease;
 }
@@ -174,9 +155,9 @@ canvas#pixelCanvas {
 .text-shimmer {
   background: linear-gradient(
     45deg,
-    hsl(260, 100%, 70%),
-    hsl(300, 100%, 65%),
-    hsl(260, 100%, 70%)
+    #b388ff,
+    #00ffe7,
+    #b388ff
   );
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -204,21 +185,21 @@ canvas#pixelCanvas {
   width: 0;
   height: 3px;
   background: linear-gradient(90deg, 
-    hsl(260, 100%, 70%), 
-    hsl(300, 100%, 65%));
+    #b388ff, 
+    #00ffe7);
   z-index: 100;
   transition: width 0.1s ease;
 }
 
 /* Typing effect */
 .typing-effect {
-  border-right: 2px solid hsl(260, 100%, 70%);
+  border-right: 2px solid #00ffe7;
   animation: blink 1s infinite;
 }
 
 @keyframes blink {
   0%, 50% {
-    border-color: hsl(260, 100%, 70%);
+    border-color: #00ffe7;
   }
   51%, 100% {
     border-color: transparent;
@@ -229,8 +210,13 @@ canvas#pixelCanvas {
 ::-webkit-scrollbar {
   width: 8px;
 }
+::-webkit-scrollbar-thumb {
+  background: #00ffe7;
+  border-radius: 10px;
+}
 
-  html, body {
+/* Fullscreen scroll effect */
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -251,10 +237,10 @@ canvas#pixelCanvas {
   box-sizing: border-box;
 }
 
-/* Optional: For nicer look */
+/* Alternate section backgrounds */
 section:nth-child(even) {
-  background-color: #f0f0f0;
+  background-color: #121224;
 }
 section:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #1b1b2f;
 }

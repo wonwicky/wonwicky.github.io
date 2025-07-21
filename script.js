@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
   resizeCanvas();
   window.addEventListener("resize", resizeCanvas);
 
-  const blockSize = 2;
+  const blockSize = 0.5;
   const particles = [];
 
   class Pixel {
