@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="UTF-8">
@@ -42,21 +44,47 @@
       </ul>
     </section>
 
-    <section id="projects" class="scroll-section">
-      <h2>Projects</h2>
+<section id="projects" class="scroll-section">
+  <h2 class="text-shimmer">Projects</h2>
 
-      <h4>Programming</h4>
-      <ul>
-        <li>Project 1 - Short description</li>
-        <li>Project 2 - Short description</li>
-      </ul>
+  <h4 class="enhanced-glow">Programming</h4>
+  <div class="swiper programmingSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/300x150" alt="Weather App">
+        <h5>Weather App</h5>
+        <p>Real-time weather data with React and OpenWeather API.</p>
+        <a href="#">View More</a>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/300x150" alt="Todo App">
+        <h5>Todo List</h5>
+        <p>Lightweight task manager with localStorage in JS.</p>
+        <a href="#">View More</a>
+      </div>
+    </div>
+  </div>
 
-      <h4>Analyst</h4>
-      <ul>
-        <li>Project 1 - Short description</li>
-        <li>Project 2 - Short description</li>
-      </ul>
-    </section>
+  <h4 class="enhanced-glow">Analyst</h4>
+  <div class="swiper analystSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/300x150" alt="Dashboard">
+        <h5>Data Dashboard</h5>
+        <p>Interactive Power BI dashboard for sales analysis.</p>
+        <a href="#">View More</a>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/300x150" alt="Excel Report">
+        <h5>Excel Report</h5>
+        <p>Automated Excel reports with macros & pivot tables.</p>
+        <a href="#">View More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
  
  <section id="contact" class="scroll-section">
@@ -120,6 +148,29 @@
     },
     "retina_detect": true
   });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiperOptions = {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    grabCursor: true,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  };
+  new Swiper('.programmingSwiper', swiperOptions);
+  new Swiper('.analystSwiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    grabCursor: true,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+
 </script>
 
 
