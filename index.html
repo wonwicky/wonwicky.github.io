@@ -1,182 +1,153 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aadam Walters Portfolio</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-</head> 
-  
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <header class="site-header"> 
-    <h1>Aadam Walters</h1>
-    <p>Web Developer | Programmer | Analyst</p>
-  </header>
+  <div class="app-container">
+    <header class="site-header">
+      <h1>Aadam Walters</h1>
+      <p>Web Developer | Programmer | Analyst</p>
+    </header>
 
-  <nav id="navbar"  >
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav id="navbar">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <main class="scroll-container">
-    <section id="about" class="scroll-section">
-      <h2>About Me</h2>
-      <p> I am currently in my final year of BCom degree, majoring in Information Systems and  management. I
- am currently honing my skills to become an analyst and developer  I am currently learning how to code
- and actively enhancing my skills in the field. Through a combination of online courses, practical
- projects, and hands-on experience, I am developing a strong foundation in programming concepts. I am
- also currently in the FNB academy to enhance my web development skills.  focus on problem-solving
- and applying what I learn to real-world scenarios, which helps me improve my coding abilities and
- deepen my understanding of various technologies. I thrive in collaborative environments, enjoy
- exploring innovative solutions, and am eager to apply my skills to make a meaningful impact. I have a
- strong work ethic and eagerness to learn</p>
-    </section>
+    <main class="scroll-container">
+      <section id="about" class="scroll-section">
+        <h2>About Me</h2>
+        <p>
+        I am currently in my final year of BCom degree, majoring in Information Systems and management. I am currently honing my skills to become an analyst and developer I am currently learning how to code and actively enhancing my skills in the field. Through a combination of online courses, practical projects, and hands-on experience, I am developing a strong foundation in programming concepts. I am also currently in the FNB academy to enhance my web development skills. focus on problem-solving and applying what I learn to real-world scenarios, which helps me improve my coding abilities and deepen my understanding of various technologies. I thrive in collaborative environments, enjoy exploring innovative solutions, and am eager to apply my skills to make a meaningful impact. I have a strong work ethic and eagerness to learn
 
-    <section id="education" class="scroll-section">
-      <h2>Education</h2>
-      <ul>
-        <li>Degree in BCom majoring in management and Information systems</li>
-        <li>FNB Certification in Full Stack Web Development</li>
-      </ul>
-    </section>
+        </p>
+      </section>
 
-<section id="projects" class="scroll-section">
-  <h2 class="text-shimmer">Projects</h2>
+      <section id="education" class="scroll-section">
+        <h2>Education</h2>
+        <ul>
+          <li>BCom degree in Management & Information Systems</li>
+          <li>FNB Academy: Full Stack Web Development Certification</li>
+        </ul>
+      </section>
 
-  <h4 class="enhanced-glow">Programming</h4>
-  <div class="swiper programmingSwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://via.placeholder.com/300x150" alt="name">
-        <h5>APP</h5>
-        <p>descrrption</p>
-        <a href="#">View More</a>
-      </div>
-      <div class="swiper-slide">
-        <img src="https://via.placeholder.com/300x150" alt="name">
-        <h5>WEB</h5>
-        <p>description</p>
-        <a href="#">View More</a>
-      </div>
-    </div>
+      <section id="projects" class="scroll-section">
+        <h2 class="text-shimmer">Projects</h2>
+
+        <h4 class="enhanced-glow">Programming</h4>
+        <div class="swiper programmingSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-hover-effect">
+              <img src="https://via.placeholder.com/300x150" alt="App Project" />
+              <h5>App Project</h5>
+              <p>Mobile app development showcasing my skills.</p>
+              <a href="#">View More</a>
+            </div>
+            <div class="swiper-slide card-hover-effect">
+              <img src="https://via.placeholder.com/300x150" alt="Web Project" />
+              <h5>Web Project</h5>
+              <p>Responsive web applications and websites.</p>
+              <a href="#">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="enhanced-glow">Analyst</h4>
+        <div class="swiper analystSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-hover-effect">
+              <img src="https://via.placeholder.com/300x150" alt="Data Dashboard" />
+              <h5>Data Dashboard</h5>
+              <p>Interactive dashboard analytics and reporting.</p>
+              <a href="#">View More</a>
+            </div>
+            <div class="swiper-slide card-hover-effect">
+              <img src="https://via.placeholder.com/300x150" alt="Excel Report" />
+              <h5>Excel Report</h5>
+              <p>Advanced Excel reports and data visualization.</p>
+              <a href="#">View More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-section">
+        <h2 class="text-shimmer">Let’s Connect</h2>
+        <p>Feel free to reach out. I’d love to hear from you!</p>
+
+        <div class="contact-container">
+          <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit" class="glow-button">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-buttons">
+            <h3>Get in Touch</h3>
+            <div class="button-grid">
+              <a href="mailto:waltersaadam@gmail.com" class="contact-btn email">Email</a>
+              <a href="https://linkedin.com/in/aadam-walters-b47942286" class="contact-btn linkedin" target="_blank">LinkedIn</a>
+              <a href="https://github.com/" class="contact-btn github" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Aadam Walters. All rights reserved.</footer>
   </div>
 
-  <h4 class="enhanced-glow">Analyst</h4>
-  <div class="swiper analystSwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://via.placeholder.com/300x150" alt="Dashboard">
-        <h5>Data Dashboard</h5>
-        <p>description</p>
-        <a href="#">View More</a>
-      </div>
-      <div class="swiper-slide">
-        <img src="https://via.placeholder.com/300x150" alt="Excel Report">
-        <h5>Excel Report</h5>
-        <p>description</p>
-        <a href="#">View More</a>
-      </div>
-    </div>
-  </div>
-</section>
+  <div id="particles-js"></div>
 
-
-
- 
- <section id="contact" class="scroll-section">
-  <h2 class="text-shimmer">Let’s Connect</h2>
-  <p>Feel free to reach out. I’d love to hear from you!</p>
-
-  <div class="contact-container">
-    <!-- 💬 Form -->
-    <div class="contact-form">
-      <h3>Send Me a Message</h3>
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="glow-button">Send Message</button>
-      </form>
-    </div>
-
-    <!-- 🤝 Contact Buttons -->
-    <div class="contact-buttons">
-      <h3>Get in Touch with Me</h3>
-      <div class="button-grid">
-        <a href="mailto:waltersaadam@gmail.com" class="contact-btn email">Email</a>
-        <a href="https://www.linkedin.com/in/aadam-walters-b47942286/" class="contact-btn linkedin" target="_blank">LinkedIn</a>
-        <a href="https://github.com/" class="contact-btn github" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  </main>
-
-  <footer>
-    &copy; 2025 Aadam Walters. All rights reserved.
-  </footer>
-  <!-- Place this div inside your <body> but outside main content -->
-<div id="particles-js"></div>
-
-<!-- Load particles.js and initialize it -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": { "value": 80 },
-      "color": { "value": "#ffffff" },
-      "shape": { "type": "circle" },
-      "opacity": { "value": 0.2, "random": true },
-      "size": { "value": 3, "random": true },
-      "line_linked": { "enable": false },
-      "move": {
-        "enable": true,
-        "speed": 1,
-        "random": true,
-        "out_mode": "out"
-      }
-    },
-    "interactivity": {
-      "events": { "onhover": { "enable": false } },
-      "resize": true
-    },
-    "retina_detect": true
-  });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiperOptions = {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    grabCursor: true,
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  };
-  new Swiper('.programmingSwiper', swiperOptions);
-  new Swiper('.analystSwiper', {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    grabCursor: true,
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
-
-</script>
-
-
-  <!-- Canvas for drag pixel effect -->
-  <canvas id="pixelCanvas"></canvas>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.2, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 1, random: true, out_mode: "out" },
+      },
+      interactivity: { events: { onhover: { enable: false } }, resize: true },
+      retina_detect: true,
+    });
+
+    const swiperOptions = {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+      grabCursor: true,
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    };
+
+    new Swiper(".programmingSwiper", swiperOptions);
+    new Swiper(".analystSwiper", swiperOptions);
+  </script>
 </body>
 </html>
-
